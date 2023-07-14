@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Loops2</title>
+</head>
+<body>
+<h1> Bảng cửu chương </h1>
+<script>
+    let sout, i, j;
+    sout = "<table border='1' width='300' cellspacing='10' cellpadding='9'>";
+    for (i = 2; i <= 10; i++) {
+        sout = sout + "<tr>";
+        for (j = 1; j <= 10; j++) {
+            sout = sout + "<td>" + i + "*" + j + "=" + i * j + "</td>";
+        }
+        sout = sout + "</tr>";
+        // j = 1;
+    }
+    sout = sout + "</table>";
+    document.write(sout);
+</script>
+<!--    <script>-->
+<!--        let sout,i,j;-->
+<!--        sout = '<table border="1" width="500" cellPadding="3" cellSpacing="2">'-->
+<!--        i = j = 1;-->
+
+<!--        while ( i <= 10) {-->
+<!--            sout += "<tr>";-->
+<!--            while (j <= 10){-->
+<!--                sout = sout + "<td>" + j + "*" + i + "=" + i * j + "</td>";-->
+<!--                j++-->
+<!--            }-->
+<!--            sout += "</tr>";-->
+<!--            j = 1;-->
+<!--            i++-->
+<!--        }-->
+<!--        sout += "</table>"-->
+<!--        document.write(sout);-->
+<!--    </script>-->
+</body>
+</html>
