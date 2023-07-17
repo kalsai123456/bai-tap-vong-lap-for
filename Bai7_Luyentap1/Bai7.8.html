@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai8</title>
+</head>
+<body>
+  <script>
+    let phamVi = +prompt('Nhap vao khoang so doan')
+    let nhapSo = +prompt('Nhap vao so muon doan')
+    let soRandom = Math.floor(Math.random()*phamVi)
+      if (soRandom == nhapSo){
+        alert("Ban da doan dung")
+      } else {
+        while (soRandom != nhapSo)
+        alert("Ban doan sai so dung la "+ soRandom)
+        nhapSo = +prompt('Nhap so muon doan')
+      }
+      alert("Ban doan dung")
+
+  </script>
+</body>
+</html>
